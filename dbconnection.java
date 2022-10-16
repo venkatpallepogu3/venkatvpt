@@ -1,14 +1,18 @@
 	import java.sql.*;
 	import java.io.*;
+ 
 
-     class dbconnection
+
+
+    public  class dbconnection
       {
 	public static void main(String args[])
 		{  
 		try
 		{  
 		//step1 load the driver class  
-		Class.forName("oracle.jdbc.driver.OracleDriver");  
+		Class.forName("oracle.jdbc.driver.OracleDriver"); 
+    System.out.println("ok i got it ");
 		  
 		//step2 create  the connection object  
 		Connection con=DriverManager.getConnection(  
@@ -28,4 +32,4 @@
 		}
 
 
-}}
+
